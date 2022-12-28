@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TabsPage } from './tabs.page';
+import { TabsPage } from '../tabs/tabs.page';
 
 const routes: Routes = [
   {
@@ -16,10 +16,20 @@ const routes: Routes = [
         loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'tab-plato',
+        loadChildren: () => import('../tab-plato/tab-plato.module').then(m => m.TabPlatoPageModule)
       },
       {
+        path: 'tab3',
+        loadChildren: () => import('../tab3/tab3.module').then( m => m.Tab3PageModule)
+      },{
+        path: 'tab4',
+        loadChildren: () => import('../tab4/tab4.module').then( m => m.Tab4PageModule)
+      },
+      {
+        path: 'tab6',
+        loadChildren: () => import('../tab6/tab6.module').then( m => m.Tab6PageModule)
+      },{
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

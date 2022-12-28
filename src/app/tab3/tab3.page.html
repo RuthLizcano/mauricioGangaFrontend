@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      <ion-img src="../assets/icon/logo3.svg" class="logo"></ion-img>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="light">
+  <div class="body">
+    <h1 class="t">Ropa</h1>
+    <div class="general" *ngFor="let item of newsList">
+      
+        <ion-card>
+          <ion-button  class="btn"   (click)="detailRes(item)" color="white" border-color="white" bexpand="block">
+            <img  [src]="item.url" alt="" class="contenido" />
+          </ion-button>
+             
+          <ion-card-content>
+            <ion-card-header class="titulo">{{item.tipo}}</ion-card-header>
+            <ion-card-subtitle class="sub">Talla: {{item.talla}}</ion-card-subtitle>
+            <ion-card-subtitle class="sub">Precio: ${{item.precio}}</ion-card-subtitle>
+            <app-heart-fav (click)="addFav(item)"> </app-heart-fav>
+          </ion-card-content>
+        </ion-card>
+    </div>
+  </div>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>

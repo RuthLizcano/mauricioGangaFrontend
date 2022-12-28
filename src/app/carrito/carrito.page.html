@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+    <form #form="ngForm" (ngSubmit)="logo()">
+      <ion-button class="tt" type="submit" color-activated="white" color="white" border-color="white">
+        
+          <ion-img src="../assets/icon/logo3.svg" class="logo"></ion-img>
+        
+      </ion-button>
+    </form>
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="general" justify-content-center>
+    <div text-center>
+      <h3 class="t">Productos en el Carrito</h3>
+    </div>
+    <div class="cuerpo"  color="light" bexpand="block"  *ngFor="let item of newsList">
+      <ion-card>
+        <img  [src]="item.url" alt="" class="contenido" />
+        <ion-card-content>
+          <ion-card-header class="titulo">{{item.nombre}}</ion-card-header>
+          <ion-card-header class="titulo">{{item.tipo}}</ion-card-header>
+            <ion-card-subtitle class="sub">Material: {{item.materiales}}</ion-card-subtitle>
+            <ion-card-subtitle class="sub">Precio: ${{item.precio}}</ion-card-subtitle>
+            <br>
+            <div class="trash">
+             <ion-icon name="trash-outline" (click)="romoveItem(item)" ></ion-icon>
+            </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+  </div>
+</ion-content>

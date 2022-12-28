@@ -1,0 +1,64 @@
+.logo{
+    width: 200px;
+    height: 160px;
+}
+.tt{
+    height: 110px;
+    width: 360px;
+    margin-left: -20px;
+}
+
+ion-title{
+    
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    border-top: rgb(0, 45, 19) 20px solid;
+    color: rgb(198, 250, 232);
+    height: 120px;    
+}
+
+.tituolo{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    color: rgb(183, 247, 220);
+}
+p{
+    font-weight: bold;
+    margin-left: 10px;
+    font-style: italic;
+    font-family: serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+.foto{
+    height: 200px;
+    width: 200px;
+}
+.cuerpo{
+
+    background-color: rgb(223, 255, 238);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 3px 10px;
+    padding: 3px 10px;
+     border: rgb(0, 36, 9) 5px double;
+     border-top-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+h4{
+    font-weight: bold;
+    margin-left: 10px;
+    font-style: italic;
+    font-family: serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+    <form #form="ngForm" (ngSubmit)="logo()">
+      <ion-button class="tt" type="submit" color-activated="white" color="white" border-color="white">
+        
+          <ion-img src="../assets/icon/logo3.svg" class="logo"></ion-img>
+        
+      </ion-button>
+    </form>
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="general">
+    <div class="cuerpo"  *ngFor="let item of newsList">
+      <div class="tituolo">
+        <h2>{{item.nombre}} </h2>
+        <img  [src]="item.url" alt="" class="foto" />
+      </div>
+      <p>Marca: {{item.marca}} </p>
+      <p>Descripción: {{item.descripcion}}</p>
+      <p>Precio: ${{item.precio}} </p>
+      <p>Material: {{item.materiales}} </p>
+      <p>Garantia: {{item.garantia}} </p>
+    </div>
+
+  </div>
+</ion-content>

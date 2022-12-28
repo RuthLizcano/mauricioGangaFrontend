@@ -24,3 +24,19 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.fav{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: right;
+    background-image: url(../src/assets/icon/ico-heart.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    float: right;
+    &--fill{
+        background-image: url(../src/assets/icon/ico-heart-fill.svg);
+    }
+}
+

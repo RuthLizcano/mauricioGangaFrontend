@@ -1,0 +1,77 @@
+.body{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: -16px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman';
+    font-size: 80%;
+    color: rgb(0, 0, 0);
+
+}
+
+.general{
+    margin-bottom: 5px;
+    margin-top: 15px;
+    height: 180px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+ion-card{
+    background-color: rgba(255, 255, 255, 0.315);
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+}
+.t{
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+    font-size: 30px;
+    color: rgb(252, 202, 65);
+}
+.contenido{
+    margin-top: 12%;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+.im{
+    margin-top: -30px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+.logo{
+    width: 200px;
+    height: 160px;
+}
+.tt{
+    height: 110px;
+    width: 360px;
+    margin-left: -20px;
+}
+
+ion-title{
+    
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    border-top: rgb(255, 81, 0) 20px solid;
+    color: rgb(0, 0, 0);
+    height: 120px;    
+}

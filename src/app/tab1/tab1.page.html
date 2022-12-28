@@ -1,17 +1,82 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      <ion-img src="../assets/icon/logo3.svg" class="logo"></ion-img>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="body">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <div class="espacio"></div>
+
+    <form #form="ngForm" (ngSubmit)="consultCarrito()">
+      <ion-button class="general" type="submit" color="light">
+      <div class="cerca">
+        <ion-img src="../assets/icon/ico-heart-fill.svg" class="buscar"></ion-img>
+        <div class="cuerpo">
+          <h1 class="title">Carrito de compras</h1>
+          <p class="content">Verifica los productos que vas comprar.</p>
+        </div>
+      </div>
+    </ion-button>
+  </form>
+
+    <form #form="ngForm" (ngSubmit)="consultAcc()">
+      <ion-button class="general" type="submit" color="light">
+        <div class="cerca">
+          <ion-img src="../assets/icon/buscar3.png" class="buscar"></ion-img>
+          <div class="cuerpo">
+            <h1 class="title">Buscar Accesorios</h1>
+            <p class="content">Encuentra un accesorio en especifico. </p>
+          </div>
+        </div>
+      </ion-button>
+    </form>
+
+    <form #form="ngForm" (ngSubmit)="consultRopa()">
+      <ion-button class="general" type="submit" color="light">
+        <div class="cerca">
+          <ion-img src="../assets/icon/buscar2.png" class="buscar"></ion-img>
+          <div class="cuerpo">
+            <h1 class="title">Buscar Ropa</h1>
+            <p class="content">Encuentra una prenda en especifico. </p>
+          </div>
+        </div>
+      </ion-button>
+    </form>
+
+    <form #form="ngForm" (ngSubmit)="consultElect()">
+      <ion-button class="general" type="submit" color="light">
+        <div class="cerca">
+          <ion-img src="../assets/icon/buscar4.png" class="buscar"></ion-img>
+          <div class="cuerpo">
+            <h1 class="title">Buscar Electrodomesticos</h1>
+            <p class="content">Encuentra un electrodomesticos en especifico. </p>
+          </div>
+        </div>
+      </ion-button>
+    </form>
+
+    <form #form="ngForm" (ngSubmit)="consultTec()">
+      <ion-button class="general" type="submit" color="light">
+        <div class="cerca">
+          <ion-img src="../assets/icon/buscar5.png" class="buscar"></ion-img>
+          <div class="cuerpo">
+            <h1 class="title">Buscar Tecnología</h1>
+            <p class="content">Encuentra una tecnología en especifico. </p>
+          </div>
+        </div>
+      </ion-button>
+    </form>
+
+  
+
+    <div class="espacio"></div>
+
+
+
+  </div>
+
 </ion-content>

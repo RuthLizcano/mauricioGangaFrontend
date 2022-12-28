@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="tl">
+      <ion-button class="bb" (click)="general()" color-activated="white" color="white" border-color="white" >
+        <ion-img src="../assets/icon/logo3.svg" class="l"></ion-img>
+      </ion-button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <form  #form="ngForm" (ngSubmit)="register(form)">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3 class="t">Buscar Tecnologia</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input  name="name" type="text" placeholder="Producto" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button  size="small" type="submit" [disabled]="form.invalid" expand="block" color="success"><ion-icon name="search-circle-outline"></ion-icon>Buscar</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+    <div class="general" onclick="" color="light" bexpand="block"  *ngFor="let item of res">
+      <ion-card>
+        <img  [src]="item.url" alt="" class="contenido" />
+        <ion-card-content>
+          <ion-card-header class="titulo">{{item.nombre}}</ion-card-header>
+            <ion-card-subtitle class="sub">Marca: {{item.marca}}</ion-card-subtitle>
+            <ion-card-subtitle class="sub">Precio: ${{item.precio}}</ion-card-subtitle>
+          <app-heart-fav (click)="addFav(item)"> </app-heart-fav>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+
+</ion-content>
+
